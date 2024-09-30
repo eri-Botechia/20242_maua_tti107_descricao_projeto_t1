@@ -1,0 +1,17 @@
+main section ul li article{
+    max-width: 400px;
+    max-height: auto;
+    padding: 2rem ;
+    margin: 10px auto;
+}
+
+.card__img{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    object-fit: cover;
+    max-height: 100px;
+    margin: 30px auto;
+}

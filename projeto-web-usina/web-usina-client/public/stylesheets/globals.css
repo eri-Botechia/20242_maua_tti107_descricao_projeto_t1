@@ -1,16 +1,14 @@
-*, *::before, *::after{
+*, *::after, *::before{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    list-style-type: none;
-}
-
-html{
-    font-size: 16px;
-    font-family: "M PLUS 2", sans-serif;
 }
 
 :root{
+    font-size: 16px;
+
+    --color-extremes: #e3e3e3;
+    --color-dark: #7777;
     --color-white: white;
     --color-black: black;
 
@@ -74,7 +72,74 @@ body{
     z-index: 1000;
 }
 
+}
 
+.logo{
+    height: 80px;
+    width: auto;
+    margin: 15px auto;
+}
+
+body{
+    display: grid;
+    max-width: 1fr;
+    min-height: 100vh;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 110px;
+    background-color: var(--color-extremes);
+    color: var(--color-dark);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 999;
+}
+
+
+.main{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    padding-right: 50px;
+}
+
+.main .section ul{
+    align-self: start;
+    margin:5px auto ;
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    justify-content: space-around;
+    margin-top: -30px;
+}
+
+
+.main .section ul li article a{
+    margin: 20px auto;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 60px;
+    bottom: 0;
+    background-color: var(--color-extremes);
+    color: var(--color-dark);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
 
 nav, footer{
     box-shadow: var(--shadow-route51) inset;    
